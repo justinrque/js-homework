@@ -1,7 +1,7 @@
 function isPalindrome(string) {
-  arrayString = string.split("");
-  reversedArray = arrayString.reverse();
-  reversedString = reversedArray.join("");
+  arrayString = string.split("");// ["h", "e", "l", "l", "o"]
+  reversedArray = arrayString.reverse();// ["o", "l", "l", "e", "h"]
+  reversedString = reversedArray.join("");// "olleh"
 
   if (string == reversedString) {
     console.log(string + " is a Palindrome.");
