@@ -1,0 +1,51 @@
+
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "header header header"
+    "body body sidebar"
+    "footer footer footer";
+}
+
+.box {
+  border: 5px solid black;
+  max-width: 100%;
+}
+
+.header {
+  grid-area: header;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 10px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  height: 50px;
+}
+
+.body {
+  grid-area: body;
+  max-width: 100%;
+  padding: 2px;
+}
+
+.footer {
+  grid-area: footer;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  padding-right: 10px;
+}
+
+.footer-signature {
+  margin-left: auto;
+  margin-right: 0;
+}
+
